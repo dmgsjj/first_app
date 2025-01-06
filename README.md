@@ -43,8 +43,6 @@ La consolidación inicial y la limpieza de los datos se realizaron utilizando un
 ### `www/`
 Carpeta que contiene recursos estáticos como hojas de estilo personalizadas, capturas de pantalla y scripts adicionales para mejorar la experiencia del usuario en la aplicación.
 
----
-
 ## Ejemplos de visualizaciones
 
 - **Pirámide Poblacional**
