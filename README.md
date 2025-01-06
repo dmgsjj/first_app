@@ -23,13 +23,27 @@ Este proyecto es una aplicación interactiva desarrollada por **Daniel Molina** 
 
 ## Estructura del proyecto
 
-- **`app.R`**: Código principal de la aplicación.
-- **`preparacion/`**: Scripts para el procesamiento y preparación de datos.
-  - `caracterizacion_nacional.R`: Procesamiento de datos a nivel nacional.
-  - `caracterizacion_departamento.R`: Procesamiento de datos a nivel departamental.
-- **`data/`**: Archivos de entrada con datos de caracterización.
-- **`www/`**: Recursos estáticos como hojas de estilo y capturas de pantalla.
+El desarrollo de este proyecto se basa en un proceso estructurado que consolida y prepara los datos de la Gran Encuesta Integrada de Hogares (GEIH) 2024 para su análisis interactivo.
 
+### `app.R`
+Contiene el código principal de la aplicación Shiny, definiendo la interfaz de usuario (UI) y la lógica del servidor (server). Aquí se gestionan las visualizaciones interactivas, los filtros dinámicos y las opciones de exportación.
+
+### `preparacion/`
+Carpeta que agrupa los scripts para el procesamiento de los datos a diferentes niveles:
+- **`caracterizacion_nacional.R`**: Procesa los datos consolidados para la caracterización a nivel nacional. Genera estadísticas como pirámides poblacionales, distribuciones de género y análisis educativos.
+- **`caracterizacion_departamento.R`**: Se encarga del procesamiento para análisis a nivel departamental, ofreciendo resultados específicos para cada uno de los departamentos de Colombia.
+
+### `data/`
+Contiene los archivos mensuales de la GEIH, tal como se obtuvieron inicialmente. Estos datos sirvieron como insumo para el proceso de consolidación, pero no son utilizados directamente por la aplicación.
+
+### `geih_complete.csv`
+Este archivo representa la GEIH consolidada y limpia, creada a partir de los datos mensuales. Es el principal insumo para los scripts de preparación ubicados en la carpeta `preparacion/`.  
+La consolidación inicial y la limpieza de los datos se realizaron utilizando un proyecto previo, disponible en [este repositorio](https://github.com/Alicbm/data-exploration). Dicho proyecto permitió unificar y depurar los datos mensuales en un único dataset.
+
+### `www/`
+Carpeta que contiene recursos estáticos como hojas de estilo personalizadas, capturas de pantalla y scripts adicionales para mejorar la experiencia del usuario en la aplicación.
+
+---
 
 ## Ejemplos de visualizaciones
 
